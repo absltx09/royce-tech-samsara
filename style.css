@@ -1,0 +1,108 @@
+:root {
+    --porcelain: #eef0f1;
+    --obsidian: #14161a;
+    --graphite: #555b63;
+    --steel: #c5cad0;
+    --night: #1f2a33;
+    --amber: #a67d43;
+    --gold: #d4af37;
+
+    --display: 'Bodoni Moda', Georgia, serif;
+    --sans: 'Instrument Sans', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--porcelain);
+    color: var(--obsidian);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--display);
+    font-weight: 400;
+    line-height: 1.05;
+    margin: 0 0 16px;
+}
+h1 { font-size: 72px; }
+h2 { font-size: 44px; }
+h3 { font-size: 24px; }
+
+p { max-width: 640px;}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+
+.lede { font-size: 20px; color: var(--graphite); }
+.small { font-size: 14px; color: var(--graphite); }
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section { padding: 96px 0; }
+.dark { background: var(--night); color: var(--porcelain); }
+.dark .lede { color: #b9c2ca; }
+
+header {
+    border-bottom: 1px solid var(--steel);
+}
+header .wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    height: 6px;
+}
+.wordmark {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 26px;
+    text-decoration: none;
+}
+nav {
+    margin-left: auto;
+    display: flex;
+    gap: 22px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--graphite);
+}
+nav a:hover, nav a.current { color: var(--obsidian); text-decoration: underline; text-decoration-color: var(--amber); }
+.clock { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--graphite); }
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: var(--obsidian);
+    color: var(--porcelain);
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid var(--obsidian);
+    font-family: var(--sans);
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn.ghost { background: none; color: var(--obsidian); }
+.dark .btn { background: var(--porcelain); color: var(--obsidian); }
+
+/* placeholders for images */
+.slot {
+    background: #d6dade;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--graphite);
+    font-size: 13px;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
