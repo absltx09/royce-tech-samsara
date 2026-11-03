@@ -178,6 +178,19 @@ nav a:hover, nav a.current { color: var(--obsidian); text-decoration: underline;
 article { border-top: 1px solid var(--steel); padding: 40px 0; }
 time { font-size: 14px; color: var(--graphite); }
 
+label { display: block; font-weight: 500; margin-bottom: 8px; }
+select, input[type=text] {
+    width: 100%;
+    max-width: 480px;
+    padding: 12px;
+    font-size: 17px;
+    font-family: var(--sans);
+    border: 1px solid var(--steel);
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.choice { font-weight: 400; display: flex; gap: 10px; }
+
 footer {
     background: #17212a;
     color: #aeb8c1;
