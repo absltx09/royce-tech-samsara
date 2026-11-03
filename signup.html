@@ -28,34 +28,35 @@
                 <div class="wrap">
                     <h1>Book a free screening</h1>
                     <p class="lede">Or join the waitlist for the EME Halo. Selection is discretionary.</p>
+                    <!--fake form, nothing is saved-->
+                    <form action="thanks.html" method="get">
+                        
+                        <p><strong>What would you like?</strong></p>
+                        <label class="choice"><input type="radio" name="kind" value="screening" checked> A free Vesoler screening</label>
+                        <label class="choice"><input type="radio" name="kind" value="halo"> A place on the EME Halo waitlist</label>
+                        <br>
+
+                        <label for="district">Your district</label>
+                        <select id="district" name="district">
+                            <!--placeholder names-->
+                            <option>Harbour Road</option>
+                            <option>Kessler Street</option>
+                            <option>Eastside</option>
+                            <option>Elysia Island</option>
+                        </select>
+
+                        <label for="cid">Candidate ID (optional)</label>
+                        <!--you get your ID by playing INTAKE-->
+                        <input type="text" id="cid" name="cid" placeholder="SC-0000-A">
+
+                        <label class="choice"><input type="checkbox" name="consent" required> I understand this process is not a queue.</label>
+                        <br>
+                        <button class="btn" type="submit">Submit my interest</button>
+                    </form>
                 </div>
-            </section>
 
-            <!--fake form, nothing is saved-->
-            <form action="thanks.html" method="get">
                 
-                <p><strong>What would you like?</strong></p>
-                <label class="choice"><input type="radio" name="kind" value="screening" checked> A free Vesoler screening</label>
-                <label class="choice"><input type="radio" name="kind" value="halo"> A place on the EME Halo waitlist</label>
-                <br>
-
-                <label for="district">Your district</label>
-                <select id="district" name="district">
-                    <!--placeholder names-->
-                    <option>Harbour Road</option>
-                    <option>Kessler Street</option>
-                    <option>Eastside</option>
-                    <option>Elysia Island</option>
-                </select>
-
-                <label for="cid">Candidate ID (optional)</label>
-                <!--you get your ID by playing INTAKE-->
-                <input type="text" id="cid" name="cid" placeholder="SC-0000-A">
-
-                <label class="choice"><input type="checkbox" name="consent" required> I understand this process is not a queue.</label>
-                <br>
-                <button class="btn" type="submit">Submit my interest</button>
-            </form>
+            </section>
 
         </main>
 
