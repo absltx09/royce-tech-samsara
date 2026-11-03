@@ -65,6 +65,8 @@ section { padding: 96px 0; }
 .dark .lede { color: #b9c2ca; }
 
 header {
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 1px solid var(--steel);
 }
 header .wrap {
