@@ -65,15 +65,15 @@ section { padding: 96px 0; }
 .dark .lede { color: #b9c2ca; }
 
 header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid var(--steel);
+    position: fixed;
+    width: 100vw;
+    background-color: var(--porcelain);
 }
 header .wrap {
     display: flex;
     align-items: center;
     gap: 24px;
-    height: 6px;
 }
 .wordmark {
     font-family: var(--display);
@@ -208,5 +208,5 @@ footer {
     .timeline li { grid-template-columns: 1fr; gap: 4px; }
     header .wrap { flex-wrap: wrap; height: auto; padding-top: 14px; padding-bottom: 14px; }
     nav { margin-left: 0; width: 100%; flex-wrap: wrap; gap: 14px; }
-    .clocl { display: none;}
+    .clock { display: none;}
 }
